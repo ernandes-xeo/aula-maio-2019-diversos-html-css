@@ -1,0 +1,115 @@
+/**
+ * Arquivo de formatação para site de exemplo
+ * @autor: Prof.: Xeo;
+ * @Colégio Estadual do Paraná
+ * @Data: 24/05/2019;
+ * @atualização: 29/05/2019;
+ */
+
+ /*resets*/
+*{
+    margin: 0;
+    padding: 0;
+	box-sizing: border-box;
+}
+/*topo*/
+/*
+ seletor ID = # 
+ seletor class = .
+ elementos = elemento 
+*/
+/* Seletor separado por virgula. Será aplicado 
+a mesma formatação para todos os seletores  */
+#topo, #menu, #geral, #rodape{
+	width: 968px;
+	margin: 0 auto;
+	border: 1px solid #6940FF;
+}
+/* aplica as propriedades anteriores e a propriedade 
+abaixo
+ */
+#topo{
+	height: 200px;
+}
+
+/*formatação da logo*/
+#topo .logo{
+	display: table;
+	width: 200px;
+	height: 200px;
+	border: 1px solid #141ECC;
+}
+/* propriedade vertical align
+   a classe mae precisa ser table
+ */
+#topo .logo h1{	
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+}
+#topo .logo h1 a{
+	text-decoration: none; /* remove a decoração */
+}
+/* exibe o menu na posição horizontal */
+#menu ul li{
+	display: inline;
+}
+/* definição do seletor seguindo a herança para aplicar 
+ao elemento "a" que está dentro de ul li */
+#menu ul li a{
+	width: 200px;
+	text-decoration: none;
+	background: #141ECC;
+	color: #fff;
+	font-weight: 600px;
+	display: inline-block;
+}
+/* hover: quando passa o mouse sobre o link */
+#menu ul li a:hover{
+	background: #6940FF;
+}
+
+/*conteúdo*/
+#geral{
+	display: table;
+}
+/* largura e float para posicionar os elementos em duas colunas */
+#geral .destaque{
+	width: 49.4%;
+	background: #278000;
+	float: left;
+	margin-right: 10px;
+	margin-bottom: 10px;
+}
+
+/* reset na propriedades */
+#geral .direita{
+	float: right;
+	margin-right: 0;
+}
+
+#geral .destaque .titulo{
+	background-color: #6940FF;
+	color: #fff;
+}
+/* formatação de texto */
+#geral .destaque .conteudo{
+	color: #ffff00;
+	text-align: justify;
+	margin: 10px;
+}
+/* formatação da div que contém a imagem */
+#geral .conteudo .foto-destaque{
+	width: 50%;
+	height: 200px;
+	margin: 0 auto;
+	margin-bottom: 20px;
+	border: 1px solid red; 
+}
+/* alinhamento do texto do rodapé  */
+#rodape{
+	clear: both; /* propriedade anula o efeito do float para o rodapé  */
+	text-align: center;
+	background-color:#3700FF;
+	color: #fff;
+}

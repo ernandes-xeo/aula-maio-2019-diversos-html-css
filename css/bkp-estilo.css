@@ -1,0 +1,32 @@
+/*
+ * Arquivo de formatação para site de exemplo
+ * Prof.: Xeo;
+ * Colégio Estadual do Paraná
+ * Data: 24/05/2019;
+ **/
+*{
+    margin: 0;
+    padding: 0;
+	box-sizing: border-box;
+}
+
+header{
+	width: 990px;
+	margin: 0 auto;
+	background-color: black;
+	height: 200px;
+}
+
+header .logo{
+	display: table;
+	width: 200px;
+	height: 200px;
+	border: 1px solid red;
+}
+
+header .logo h1{
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+}
+
